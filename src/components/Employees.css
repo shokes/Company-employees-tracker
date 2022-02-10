@@ -1,0 +1,21 @@
+.employees-bg {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  /* margin-bottom: 20px; */
+  color: #fff;
+  border-radius: 9px;
+  margin: 2rem 10rem;
+  padding: 1rem;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.date {
+  background-color: teal;
+  padding: 1rem;
+  border-radius: 9px;
+}
