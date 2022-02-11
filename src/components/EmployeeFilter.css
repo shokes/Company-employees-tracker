@@ -1,0 +1,11 @@
+.employee-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.employee-flex select {
+  font-size: 1.4rem;
+  padding: 0.2rem;
+  border-radius: 11px;
+  border-color: #000;
+}

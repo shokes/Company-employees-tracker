@@ -2,20 +2,14 @@
   background-color: #333;
   display: flex;
   justify-content: space-between;
-  align-content: center;
-  /* margin-bottom: 20px; */
+  align-items: center;
+
   color: #fff;
   border-radius: 9px;
-  margin: 2rem 10rem;
-  padding: 1rem;
+  margin: 1.5rem 0;
+  padding: 1rem 3rem;
 }
 
 .name {
   font-size: 2rem;
-}
-
-.date {
-  background-color: teal;
-  padding: 1rem;
-  border-radius: 9px;
 }
