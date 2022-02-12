@@ -34,9 +34,23 @@ function App() {
       date: new Date(2022, 3, 11),
     },
   ];
+
+const saveEmployeeData = (enteredEmployeeData) => {
+
+  const employeeData = {
+    ...enteredEmployeeData,
+ };
+
+ console.log('app.js')
+console.log(employeeData);
+}
+
+
+
+
   return (
     <div>
-      <NewEmployeeForm />
+      <NewEmployeeForm onSaveEmployeeData={saveEmployeeData}/>
       <div className="main-container">
         <EmployeeFilter />
         <Employees

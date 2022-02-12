@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./NewEmployeeForm.css";
 
-const NewEmployeeForm = function () {
+const NewEmployeeForm = function (props) {
   const [enteredName, setEnteredName] = useState("");
 
   const [enteredJob, setEnteredJob] = useState("");
@@ -30,14 +30,14 @@ const NewEmployeeForm = function () {
   const submittedData = function (event) {
     event.preventDefault();
 
-    const EmployeeData = {
+    const employeeData = {
       name: enteredName,
       job: enteredJob,
       salary: enteredSalary,
       date: new Date(enteredDate),
     };
 
-    console.log(EmployeeData);
+    props.onSaveEmployeeData(employeeData);
 
     setEnteredName("");
     setEnteredJob("");
